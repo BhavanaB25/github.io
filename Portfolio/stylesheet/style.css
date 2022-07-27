@@ -1,0 +1,683 @@
+/*Import starts */
+@import url('https://fonts.googleapis.com/css2?family=Inria+Serif:wght@700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Croissant+One&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Chicle&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Fontdiner+Swanky&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@900&display=swap');
+
+/*Import Ends */
+
+/*Media Query Starts*/
+
+@media screen and (min-width:1014px) and (max-width:2000px){
+    .mybutton{
+        display: none;
+    }
+}
+
+@media screen and (min-width:100px) and (max-width:1014px){
+    .nav-item{
+        display: none;
+    }
+
+    .mybutton{
+        display: inline;
+    }
+    
+}
+
+@media screen and (min-width:700px) and (max-width:990px){
+    .content .h1{
+        font-size: 30px;
+    }
+
+    .content .about .color{
+        font-size: 35px;
+        font-weight: 700;
+    }
+
+    .Home .content{
+        margin:200px 0px 0px 70px;
+    }
+    .row .contact-title{
+        font-size:17px;
+    }
+    
+}
+
+
+@media screen and (min-width:600px) and (max-width:700px){
+    .content .h1{
+        font-size: 27px;
+    }
+
+    .content .about .color{
+        font-size: 30px;
+        font-weight: 700;
+    }
+
+    .sectionaboutme .about-me{
+        font-size: 14px;
+        font-weight:500;
+    }
+    .row .contact-title{
+        font-size:19px;
+    }
+
+}
+
+
+@media screen and (min-width:400px) and (max-width:600px){
+    .content .h1{
+        font-size: 25px;
+    } 
+
+    .content .about .color{
+        font-size: 27px;
+        font-weight: 800;
+    }
+
+    .Home .content{
+        margin:100px 0px 0px 10px;
+    }
+
+    .Contact{
+        text-align: center;
+    }
+
+    .sectionaboutme .about-me{
+        font-size: 13px;
+        font-weight:500;
+    }
+
+    .row .skill-info {
+        font-size: 14px;
+        font-weight:500;
+    }
+    .row .contact-title{
+        font-size:18x;
+    }
+
+
+}
+
+
+@media screen and (min-width:300px) and (max-width:400px){
+    .content .h1{
+        font-size: 23px;
+    }
+
+    .B-img{
+        width:50px;
+        height:50px;
+    }
+
+    .navbar h1{
+        font-size:28px;
+    }
+
+    .content .about .color{
+        font-size:24px;
+        font-weight: 700;
+    }
+
+    .Home .content{
+        margin:100px 10px; 
+    }
+
+    .projects .pro-row .my-text{
+        font-size: 100px;
+    }
+
+    .sectionaboutme .personal-info{
+        line-height: 45px;
+        font-size: 15px;
+    }
+    
+    .Home .content .about{
+        margin:30px 0px 0px 0px;
+    }
+
+    .Home .content .about  button{
+        margin-bottom:16px;
+    }
+
+    .sectionaboutme .about-me{
+        font-size: 13px;
+        font-weight:500;
+    }
+
+    .row .skill-info {
+        font-size: 13px;
+        font-weight:500;
+    }
+
+    .Achievements .achieve-title{
+        font-size:15px;
+        font-weight:900px;
+    }
+
+    .Contact{
+        text-align: center;
+    }
+    .row .contact-title{
+        font-size:15px;
+    }
+
+}
+
+
+@media screen and (min-width:100px) and (max-width:300px){
+    .content .h1{
+        font-size: 18px;
+    }
+
+    .content .about .color{
+        font-size: 16px;
+        font-weight: 700;
+    }
+
+    .Home .content ul{
+        margin:100px 10px; 
+    }
+
+    .pro-row .figure .h3{
+            font-size:10px;
+    }
+
+    .navbar h1{
+        font-size:25px;
+    }
+
+    .row .skill-info {
+        font-size: 12px;
+        font-weight:500;
+    }
+
+
+    .B-img{
+        width:40px;
+        height:40px;
+    }
+    
+    .Home .content .about{
+        margin:30px 0px 0px 0px;
+    }
+
+    .sectionaboutme .personal-info{
+        line-height: 45px;
+        font-size: 12px;
+    }
+
+
+    .sectionaboutme .about-me{
+        font-size: 10px;
+        font-weight:400;
+    }
+
+    .Achievements .achieve-title{
+        font-size:13px;
+        font-weight:700px;
+    }
+    .row .contact-title{
+        font-size:15px;
+    }
+    
+    
+}
+/*Media Query Ends*/
+
+/*Navigation Style Starts*/
+
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+::selection{
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 0, 0);
+}
+
+#navbar-example2{
+    background-color: black;
+    position: sticky;
+    top:0;
+    height:15vh;
+}
+
+
+.mybutton{
+    background-color:crimson;
+}
+
+
+.nav-title{
+    letter-spacing:.6px;
+    color:white;
+    display: inline;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+    animation-name: translation;
+    animation-duration: 1s;
+    font-size: 32px;
+    font-weight:bolder;
+    margin-left:10px;
+}
+
+.for-color{
+    color:crimson;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.nav-items li a:hover{
+    font-size:24px;
+    color:crimson;
+    transition:font-size .2s;
+}
+
+.nav-items{
+    margin-left:0px;
+    display: flex;
+    animation-name:translation2 ;
+    animation-duration:1s;
+}
+
+.nav-items li{
+    font-family: 'Poppins';
+}
+
+.nav-items li a{
+    text-decoration: none;
+    color:rgb(255, 255, 255);
+    font-size: 20px;
+}
+
+/*Navigation Style Ends*/
+
+/*Section home Starts*/
+
+
+.myimage{
+    /* background: url("/images/portfolio12.jpg") no-repeat; */
+    background-size: cover;
+    filter:brightness(.8);
+}
+
+.Home .content{
+    display: inline-block;
+    color:rgb(255, 255, 255);
+    display:inline-block;
+    align-items: center;
+    justify-content: center;
+    margin:230px 0px 0px 90px;
+}
+
+.content h1{
+    display: inline-block;
+    font-size: 40px;
+    position: relative;
+    color:transparent;
+    animation:text-reveal 1s ease forwards;
+}
+
+.content .color{
+    font-family: 'Roboto Slab', serif;
+    display: inline-block;
+    font-size: 45px;
+    font-weight: 900;
+    position: relative;
+    color:transparent;
+    animation:text-reveal1 .5s ease forwards;
+    animation-delay: .8s;
+}
+
+.content .about h1 span{
+    position: absolute;
+    top:0;
+    left:0;
+    background-color: rgb(255, 255, 255);
+    width:0;
+    height:100%;
+    animation: text-box 2s ease;
+}
+
+.content .about .color span{
+    position: absolute;
+    top:0;
+    left:0;
+    background-color: crimson;
+    width:0;
+    height:100%;
+    animation: text-box1 2s ease;
+}
+
+.about a{
+    text-decoration: none;
+    color:black;    
+    font-weight: 900;
+}
+
+.about button:hover{
+    background-color:white;
+    border-width:1px;
+    border-color: black;
+}
+
+.about button{
+    border-width:1px;
+    border-color: rgb(255, 255, 255);
+    animation-duration: 1.5s;
+    animation-name: animate-pop  ;
+}
+
+.about a{
+    color:white;
+}
+
+.about a:hover{
+    color:rgb(0, 0, 0);
+}
+
+.about h1{
+    font-family: 'Croissant One', cursive;
+    animation:text-reveal .5s ease forwards;
+    animation-delay: .8s;
+}
+
+/*section home ends*/
+
+/*Section Project starts*/
+
+.projects{
+    background-image: url("/images/port11.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+#Project-head{
+    color:white;
+    font-weight: 900;
+    text-align: center;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.projects-span{
+    color:crimson;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.figure .project-img:hover{
+    transform: scaleX(1.1) scaleY(1.1);
+}
+
+/*Section Project ends*/
+
+
+/*About Me starts*/
+
+.about-me{
+    color:white;
+    font-size: 18px;
+    padding:50px 0px;
+    font-weight:600;
+    font-family: 'Inria Serif', serif;
+}
+
+#Aboutme-head{
+    color:white;
+    font-weight: 900;
+    text-align: center;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.sectionaboutme{
+    background-image: url("/images/port16.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.personal-text{
+    font-size: 30px;
+    padding:50px 0px;
+    font-weight:600;
+    color:rgb(255, 0, 0)
+}
+
+.personal-heading{
+    color:white;
+    font-weight: 900;
+    text-align: center;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.personal-info{
+    text-align: justify;
+    line-height: 50px;
+    font-size: 18px;
+    font-family: 'Inria Serif', serif;
+}
+
+/*About Me ends*/
+
+/*Skills section Starts*/
+
+.Skills{
+    background-image: url("/images/port20.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#Skill-head{
+    color:white;
+    font-weight: 900;
+    text-align: center;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.Skill-span{
+    color:crimson;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.skill-info{
+    text-align: center;
+    color:white;
+    font-size: 18px;
+    padding-bottom:20px;
+    font-weight:600;
+    font-family: 'Inria Serif', serif;
+}
+
+/*Achievement Section Starts*/
+
+.Achievements{
+    background-image: url("/images/contact6.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#Achievement-head{
+    color:white;
+    font-weight: 900;
+    text-align: center;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.Achievement-span{
+    color:crimson;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.Achievements .figure .achieve-img:hover{
+    transform: scaleX(1.1) scaleY(1.1);
+}
+
+.Achievements .figure .achieve-img:hover{
+    transform: scaleX(1.1) scaleY(1.1);
+}
+
+/*Achievement Section ends*/
+
+/*Contact Section Starts*/
+
+.Contact{
+    background-image: url("/images/contact6.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#Contact-head{
+    color:white;
+    font-weight: 900;
+    text-align: center;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.Contact-span{
+    color:crimson;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+/*Contact Section ends*/
+
+.slideUp1 {
+    animation-name: slideUp;
+    animation-name: slideUp;
+    animation-duration: 1s;
+    animation-duration: 1s;
+    visibility: visible; 
+}
+
+.slideUp2 {
+    animation-name: slideUp1;
+    animation-duration: 1s;
+    visibility: visible;
+}
+
+/*Skills section ends*/
+
+/*Animations Starts*/
+
+@keyframes animate-pop {
+    0% {
+      opacity: 0;
+      transform: scale(0.5, 0.5);
+    }
+  
+    100% {
+      opacity: 1;
+      transform: scale(1, 1);
+    }
+  }
+
+@keyframes slideUp2 {
+    0% {
+      opacity: 0;
+      transform: translateY(80%);
+    } 
+    100% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+  }
+
+@keyframes slideUp1 {
+    0% {
+      opacity: 0;
+      transform: translateY(100%);
+    } 
+    100% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+  }
+
+@keyframes opacity{
+    0%{
+        opacity:0;
+    }
+    100%{
+        opacity:1;
+    }
+}
+
+@keyframes translation{
+    from{
+        transform: translateX(-200px);
+    }
+    to{
+        transform: translateX(0%);
+    }
+}
+
+@keyframes translation2{
+    from{
+        transform:translateY(-100px);
+    }
+    to{
+        transform:translateY(0);
+    }
+}
+
+@keyframes text-reveal{
+    100%{
+        color:rgb(255, 255, 255);
+    }
+}
+
+@keyframes text-box{
+    50%{
+        width:100%;
+        left:0;
+    }
+    100%{
+        width:0;
+        left:100%;
+    }
+}
+
+@keyframes text-reveal1{
+    100%{
+        color:crimson;
+    }
+}
+
+@keyframes text-box1{
+    50%{
+        width:100%;
+        left:0;
+    }
+    100%{
+        width:0;
+        left:100%;
+    }
+}
+
+@keyframes all{
+    0%{
+        filter:blur(0.1);
+    }
+    50%{
+        filter:blur(0.5);
+    }
+    100%{
+        filter:blur(0.9);
+    }
+}
+
+
+/*Animation Ends*/
+
